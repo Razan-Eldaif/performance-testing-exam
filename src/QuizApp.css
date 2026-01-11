@@ -96,6 +96,22 @@ body {
   border-color: #667eea;
 }
 
+.answer-button.correct-answer {
+  background: #28a745;
+  color: white;
+  border-color: #28a745;
+  animation: pulse 0.5s ease;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
 .answer-button:disabled {
   cursor: not-allowed;
   opacity: 0.7;
@@ -120,16 +136,41 @@ body {
   color: #dc3545;
 }
 
+.navigation-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.prev-button,
 .next-button {
   padding: 12px 40px;
   font-size: 18px;
   font-weight: bold;
-  background: #667eea;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.prev-button {
+  background: #6c757d;
+}
+
+.prev-button:hover:not(:disabled) {
+  background: #5a6268;
+  transform: scale(1.05);
+}
+
+.prev-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.next-button {
+  background: #667eea;
 }
 
 .next-button:hover {

@@ -4,12 +4,20 @@ A React-based interactive quiz application for ISTQB Performance Testing concept
 
 ## Features
 
-- 30 comprehensive multiple-choice questions based on ISTQB Performance Testing Foundation Level Syllabus (Chapters 1 & 2)
+- 59 comprehensive, challenging multiple-choice questions based on ISTQB Performance Testing Foundation Level Syllabus (Chapters 1 & 2)
 - Chapter 1 questions (20): Principles & Concepts, Types of Performance Testing, Testing Types, Load Generation, and Common Failures
-- Chapter 2 questions (10): Performance Measurement Fundamentals, Metrics Collection, Result Aggregation, and Key Sources of Metrics
-- Instant feedback on answers (correct/incorrect)
+- Chapter 2 questions (39): 
+  - Performance Measurement Fundamentals
+  - Collecting Performance Measurements and Metrics (Technical, Business, and Operational Environments)
+  - Selecting Performance Metrics (Goal-Question-Metric approach)
+  - Aggregating Results from Performance Testing
+  - Key Sources of Performance Metrics (Test Tools, Monitoring Tools, Log Analysis)
+  - Typical Results of a Performance Test (Test Oracles, Misleading Results)
+- **Previous and Next navigation buttons** to move between questions
+- **Instant feedback** on answers (correct/incorrect)
+- **Correct answer highlighting** - When you answer incorrectly, the correct answer is highlighted in green so you can learn
 - Final score calculation with percentage
-- Modern, responsive UI design
+- Modern, responsive UI design with smooth animations
 - Built with React 18 and Create React App
 
 ## Prerequisites

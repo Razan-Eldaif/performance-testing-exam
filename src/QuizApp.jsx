@@ -307,6 +307,296 @@ const QuizApp = () => {
         'Metrics are only used for reporting to management'
       ],
       correctAnswer: 1
+    },
+    {
+      question: 'According to the ISTQB syllabus on collecting performance measurements, why must response time metrics be further defined beyond just measuring response time?',
+      options: [
+        'To reduce testing costs',
+        'To be meaningful and actionable, they must be defined in context such as time of day, concurrent users, and data volume',
+        'To comply with regulatory requirements',
+        'To simplify test automation'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'In what ways do performance metrics vary based on the business context versus the operational context?',
+      options: [
+        'They do not vary; all metrics are standard across contexts',
+        'Business context focuses on processes and stakeholder expectations; operational context focuses on technology usage',
+        'Business metrics are always more important than operational metrics',
+        'Operational metrics only measure hardware performance'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Why would the metrics chosen for an international e-commerce website differ significantly from those for an embedded medical device system?',
+      options: [
+        'Medical devices do not require performance testing',
+        'Different technical environments, business contexts, and test objectives require context-appropriate metrics',
+        'E-commerce sites only need to measure page load times',
+        'Medical devices only need functional testing'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which of the following is an example of a performance metric from the Technical Environment category?',
+      options: [
+        'Business process efficiency and SLA compliance rates',
+        'Throughput rate of transactions and batch processing times',
+        'Response time per transaction, resource utilization (CPU, memory), and network latency',
+        'Operational processes like environment start-up time'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'From a Business Environment perspective, what does "throughput of data, transactions, and other units of work" measure?',
+      options: [
+        'The speed of network connections',
+        'Quantities like orders processed per hour or data rows added per minute',
+        'The number of test cases executed',
+        'CPU utilization percentages'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What is an example of an Operational Environment performance metric?',
+      options: [
+        'Number of concurrent users during peak load',
+        'Page load times for web applications',
+        'Time required for environment start-up, backups, shutdown, and system restoration',
+        'SLA compliance and violation rates'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'Which metric would be most relevant when evaluating Service Level Agreement (SLA) compliance in the Business Environment?',
+      options: [
+        'Memory utilization and disk I/O rates',
+        'SLA violations per unit of time and business process efficiency',
+        'Network bandwidth and throughput',
+        'Code complexity metrics'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'In section 2.1.3, why is collecting MORE metrics than required considered problematic?',
+      options: [
+        'It makes the testing team look unprofessional',
+        'Each metric requires consistent collection and reporting effort; excessive metrics waste resources without adding value',
+        'More metrics always lead to better testing',
+        'It increases hardware costs'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What is the Goal-Question-Metric (GQM) approach designed to achieve in performance testing?',
+      options: [
+        'To eliminate all performance testing costs',
+        'To align metrics with performance goals by establishing goals, asking questions about achievement, and associating measurable metrics',
+        'To replace all manual testing with automation',
+        'To reduce the number of developers needed'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'According to the syllabus, when does the GQM approach NOT always fit the performance testing process?',
+      options: [
+        'When testing web applications',
+        'When some metrics represent system health and are not directly linked to specific goals',
+        'When using automated testing tools',
+        'When testing mobile applications'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Why might additional measurements and metrics be needed after capturing initial measurements?',
+      options: [
+        'To justify the testing budget',
+        'To understand true performance levels and determine where corrective actions are needed',
+        'To impress stakeholders with more data',
+        'To extend the testing timeline'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'In section 2.2 on Aggregating Results, what is the PRIMARY purpose of aggregating performance metrics?',
+      options: [
+        'To reduce data storage requirements',
+        'To understand and express metrics in a way that accurately conveys the total picture of system performance',
+        'To simplify report generation for management',
+        'To hide poor performance results'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Why is drawing conclusions from detailed-level performance metrics alone particularly difficult for business stakeholders?',
+      options: [
+        'Business stakeholders lack technical knowledge',
+        'Detailed metrics do not show the "big picture" and trends that stakeholders need to understand system performance',
+        'Detailed metrics are always incorrect',
+        'Business stakeholders prefer graphical reports only'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What are the three key benefits of aggregating performance metrics according to section 2.2?',
+      options: [
+        'Reduced costs, faster testing, and fewer resources needed',
+        'Stakeholders can see big picture status, performance trends can be identified, and metrics can be reported understandably',
+        'More test cases, better automation, and improved code quality',
+        'Simpler tools, less training needed, and quicker deployments'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What is the "probe effect" in performance testing as described in section 2.3?',
+      options: [
+        'The effect of using monitoring probes in hardware',
+        'The impact that metrics collection effort has on system performance being measured',
+        'A type of performance testing tool',
+        'The process of debugging performance issues'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'According to section 2.3, what are the three key sources of performance metrics?',
+      options: [
+        'Developers, testers, and managers',
+        'Performance Test Tools, Performance Monitoring Tools, and Log Analysis Tools',
+        'Hardware, software, and network',
+        'Requirements, design documents, and code'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'How do performance test tools vary in their presentation of metrics according to the syllabus?',
+      options: [
+        'All tools present metrics identically',
+        'Tools vary in number of metrics shown, display format (text vs. graphical/dashboard), and customization capabilities',
+        'Only expensive tools show metrics graphically',
+        'Text-based tools are always better than graphical tools'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What is a key purpose of Performance Monitoring Tools beyond supplementing performance test tool reporting?',
+      options: [
+        'To replace performance test tools entirely',
+        'To monitor system performance ongoing, alert administrators to lowered performance, and detect suspicious behavior like DoS attacks',
+        'To write test scripts automatically',
+        'To generate code coverage reports'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What do Log Analysis Tools provide that complements other performance metrics sources?',
+      options: [
+        'Real-time user interface testing',
+        'Scanning of server logs to compile metrics and create graphical charts',
+        'Automated code refactoring',
+        'Database schema optimization'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'In section 2.4, why is performance testing described as often lacking well-defined test oracles compared to functional testing?',
+      options: [
+        'Performance testing tools are not mature',
+        'Stakeholders are notoriously bad at articulating performance requirements, and analysts/owners are bad at eliciting them',
+        'Performance testing is a new discipline',
+        'Functional testing is easier than performance testing'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'According to section 2.4, why can initial raw performance test results be misleading?',
+      options: [
+        'Testing tools always produce errors',
+        'Performance failures can be hidden beneath apparently good overall results; e.g., low resource utilization but unacceptable throughput',
+        'Raw results are never accurate',
+        'Only aggregated results matter'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'In the example from section 2.4, what scenario demonstrates hidden performance failures?',
+      options: [
+        'High CPU usage with fast response times',
+        'Resource utilization well under 75% but throughput/response time an order of magnitude too slow',
+        'High memory usage with many concurrent users',
+        'Network latency causing database timeouts'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which of the following technical environment metrics would be MOST relevant for IoT (Internet-of-Things) systems?',
+      options: [
+        'Page load times and browser compatibility',
+        'Battery consumption, network bandwidth in constrained environments, and resource utilization in embedded contexts',
+        'Desktop application response times',
+        'Mainframe batch processing times'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'For a web-based application, which combination of metrics from the technical environment category would be most comprehensive?',
+      options: [
+        'Only server CPU and memory',
+        'Response time per transaction/user, page load times, throughput rates, network bandwidth, and server resource utilization',
+        'Just database query times',
+        'Only network latency measurements'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What is "scope of usage" as a Business Environment metric?',
+      options: [
+        'The number of lines of code in the application',
+        'The percentage of global or national users conducting tasks at a given time',
+        'The physical location of servers',
+        'The number of developers on the team'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Why is "timing of usage" (e.g., orders processed during peak load times) an important Business Environment metric?',
+      options: [
+        'It determines office hours for the development team',
+        'It helps understand system behavior under real-world usage patterns and peak demand periods',
+        'It measures employee productivity',
+        'It tracks project timeline adherence'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which statement best describes why "concurrency of usage" differs from "scope of usage" as business metrics?',
+      options: [
+        'They measure the same thing',
+        'Concurrency measures simultaneous users performing tasks; scope measures total user population percentage active at any time',
+        'Concurrency is only for technical teams',
+        'Scope is only for financial reporting'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'In the Operational Environment, why is "system restoration time from backup" a critical metric?',
+      options: [
+        'It measures developer efficiency',
+        'It indicates disaster recovery capability and business continuity readiness',
+        'It tracks backup storage costs',
+        'It measures network speed'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What makes "alerts and warnings timing" an important operational metric?',
+      options: [
+        'It tracks how many emails administrators receive',
+        'System must issue alerts/warnings quickly enough for timely response to prevent or minimize service degradation',
+        'It measures log file sizes',
+        'It determines holiday schedules'
+      ],
+      correctAnswer: 1
     }
   ];
 
@@ -325,6 +615,13 @@ const QuizApp = () => {
       setSelectedAnswer(null);
     } else {
       setShowScore(true);
+    }
+  };
+
+  const handlePreviousQuestion = () => {
+    if (currentQuestion > 0) {
+      setCurrentQuestion(currentQuestion - 1);
+      setSelectedAnswer(null);
     }
   };
 
@@ -361,18 +658,24 @@ const QuizApp = () => {
             {questions[currentQuestion].question}
           </div>
           <div className="answer-section">
-            {questions[currentQuestion].options.map((option, index) => (
-              <button
-                key={index}
-                onClick={() => handleAnswerClick(index)}
-                className={`answer-button ${
-                  selectedAnswer === index ? 'selected' : ''
-                }`}
-                disabled={selectedAnswer !== null}
-              >
-                {option}
-              </button>
-            ))}
+            {questions[currentQuestion].options.map((option, index) => {
+              const isSelected = selectedAnswer === index;
+              const isCorrect = index === questions[currentQuestion].correctAnswer;
+              const showCorrect = selectedAnswer !== null && isCorrect && selectedAnswer !== questions[currentQuestion].correctAnswer;
+              
+              return (
+                <button
+                  key={index}
+                  onClick={() => handleAnswerClick(index)}
+                  className={`answer-button ${
+                    isSelected ? 'selected' : ''
+                  } ${showCorrect ? 'correct-answer' : ''}`}
+                  disabled={selectedAnswer !== null}
+                >
+                  {option}
+                </button>
+              );
+            })}
           </div>
           {selectedAnswer !== null && (
             <div className="feedback-section">
@@ -385,13 +688,22 @@ const QuizApp = () => {
               >
                 {selectedAnswer === questions[currentQuestion].correctAnswer
                   ? '✓ Correct!'
-                  : '✗ Incorrect'}
+                  : '✗ Incorrect - The correct answer is highlighted in green'}
               </p>
-              <button onClick={handleNextQuestion} className="next-button">
-                {currentQuestion + 1 === questions.length
-                  ? 'Show Results'
-                  : 'Next Question'}
-              </button>
+              <div className="navigation-buttons">
+                <button 
+                  onClick={handlePreviousQuestion} 
+                  className="prev-button"
+                  disabled={currentQuestion === 0}
+                >
+                  Previous Question
+                </button>
+                <button onClick={handleNextQuestion} className="next-button">
+                  {currentQuestion + 1 === questions.length
+                    ? 'Show Results'
+                    : 'Next Question'}
+                </button>
+              </div>
             </div>
           )}
         </div>
