@@ -4,7 +4,8 @@ A React-based interactive quiz application for ISTQB Performance Testing concept
 
 ## Features
 
-- 10 multiple-choice questions covering ISTQB Performance Testing topics
+- 20 comprehensive multiple-choice questions based on ISTQB Performance Testing Foundation Level Syllabus (Chapter 1)
+- Questions cover all learning objectives: Principles & Concepts, Types of Performance Testing, Testing Types, Load Generation, and Common Failures
 - Instant feedback on answers (correct/incorrect)
 - Final score calculation with percentage
 - Modern, responsive UI design
@@ -102,6 +103,31 @@ performance-testing-exam/
 ├── package.json           # Dependencies and scripts
 └── README.md             # This file
 ```
+
+## Quiz Topics Covered (Based on ISTQB Syllabus Chapter 1)
+
+**1.1 Principles and Concepts (PTFL-1.1.1)**
+- ISO 25010 Performance Efficiency sub-characteristics (Time Behavior, Resource Utilization, Capacity)
+- Performance testing principles and their application
+
+**1.2 Types of Performance Testing (PTFL-1.2.1)**
+- Load Testing, Stress Testing, Spike Testing, Scalability Testing
+- Endurance Testing, Concurrency Testing, Capacity Testing
+- Distinctions between different performance testing types
+
+**1.3 Testing Types in Performance Testing (PTFL-1.3.1)**
+- Static testing activities (reviews of requirements, architecture, code)
+- Dynamic testing across different test levels (unit, integration, system, acceptance)
+
+**1.4 The Concept of Load Generation (PTFL-1.4.1)**
+- Load generation via UI, Crowds, API, and Captured Communication Protocols
+- Advantages and trade-offs of different load generation approaches
+
+**1.5 Common Failures and Their Causes (PTFL-1.5.1)**
+- Slow response scenarios and their underlying causes
+- Degraded response over time (memory leaks, disk fragmentation)
+- Inadequate error handling under load
+- Resource saturation and capacity issues
 
 ## Technologies Used
 
