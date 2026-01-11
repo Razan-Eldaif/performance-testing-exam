@@ -99,7 +99,7 @@ const QuizApp = () => {
       correctAnswer: 0
     },
     {
-      question: 'In scalability testing, what is the main objective when determining the system\'s ability to grow?',
+      question: "In scalability testing, what is the main objective when determining the system's ability to grow?",
       options: [
         'To find the maximum number of bugs in the system',
         'To determine if the system can meet future efficiency requirements without violating currently specified performance requirements',
