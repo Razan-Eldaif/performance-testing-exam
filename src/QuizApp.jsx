@@ -207,6 +207,106 @@ const QuizApp = () => {
         'The cost of infrastructure for the system'
       ],
       correctAnswer: 2
+    },
+    {
+      question: 'According to ISTQB, which of the following is a key risk if performance metrics are not properly defined before testing?',
+      options: [
+        'The testing team will have too many metrics to analyze',
+        'Performance test results may be evaluated based on subjective opinion rather than measurable criteria',
+        'The cost of testing will increase significantly',
+        'Automated testing tools will not function properly'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Why are performance test results typically aggregated rather than analyzed individually?',
+      options: [
+        'To reduce storage requirements for test data',
+        'To identify patterns, trends, and statistical measures that individual results cannot reveal',
+        'To make testing faster and more efficient',
+        'To comply with industry regulations'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which of the following is a typical metric collected during performance testing?',
+      options: [
+        'Number of developers working on the project',
+        'Response time, throughput, and resource utilization',
+        'Lines of code written per day',
+        'Number of meetings held during testing'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What is the primary purpose of establishing a baseline set of performance measures?',
+      options: [
+        'To document the testing process for auditors',
+        'To compare actual test results against defined acceptable and unacceptable performance levels',
+        'To estimate the budget for future projects',
+        'To determine how many testers are needed'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which of the following represents a key source of performance metrics during testing?',
+      options: [
+        'Project management documentation only',
+        'System under test, monitoring tools, and application logs',
+        'Developer interviews and code reviews',
+        'Customer satisfaction surveys'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What risk occurs when performance requirements are not defined in measurable terms?',
+      options: [
+        'Testing will take longer than expected',
+        'It becomes unknown whether performance levels are acceptable to meet operational objectives',
+        'More testers will be required',
+        'The application will automatically fail'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'In performance testing, why is it important to understand which measurements and metrics are needed before starting testing?',
+      options: [
+        'To ensure the testing team has enough resources',
+        'To prevent undertaking performance testing without clear goals and evaluation criteria',
+        'To satisfy management reporting requirements',
+        'To determine the programming language to use'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What is a consequence of not being able to identify trends that predict lower performance levels?',
+      options: [
+        'The development team will work faster',
+        'Potential performance degradation may go undetected until it impacts users',
+        'Testing costs will decrease',
+        'The application will use less memory'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which statement best describes why understanding performance tool results is critical?',
+      options: [
+        'It helps justify the cost of the testing tools',
+        'Without understanding tool results, performance cannot be accurately evaluated and interpreted',
+        'It allows testers to use more expensive tools',
+        'It reduces the need for manual testing'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What is the relationship between measurements and metrics in performance testing?',
+      options: [
+        'They are the same thing and can be used interchangeably',
+        'Metrics are derived from measurements and used to define goals and evaluate results',
+        'Measurements are less important than metrics',
+        'Metrics are only used for reporting to management'
+      ],
+      correctAnswer: 1
     }
   ];
 

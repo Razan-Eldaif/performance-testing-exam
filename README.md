@@ -4,8 +4,9 @@ A React-based interactive quiz application for ISTQB Performance Testing concept
 
 ## Features
 
-- 20 comprehensive multiple-choice questions based on ISTQB Performance Testing Foundation Level Syllabus (Chapter 1)
-- Questions cover all learning objectives: Principles & Concepts, Types of Performance Testing, Testing Types, Load Generation, and Common Failures
+- 30 comprehensive multiple-choice questions based on ISTQB Performance Testing Foundation Level Syllabus (Chapters 1 & 2)
+- Chapter 1 questions (20): Principles & Concepts, Types of Performance Testing, Testing Types, Load Generation, and Common Failures
+- Chapter 2 questions (10): Performance Measurement Fundamentals, Metrics Collection, Result Aggregation, and Key Sources of Metrics
 - Instant feedback on answers (correct/incorrect)
 - Final score calculation with percentage
 - Modern, responsive UI design
@@ -104,7 +105,9 @@ performance-testing-exam/
 └── README.md             # This file
 ```
 
-## Quiz Topics Covered (Based on ISTQB Syllabus Chapter 1)
+## Quiz Topics Covered (Based on ISTQB Syllabus Chapters 1 & 2)
+
+### Chapter 1: Basic Concepts (20 Questions)
 
 **1.1 Principles and Concepts (PTFL-1.1.1)**
 - ISO 25010 Performance Efficiency sub-characteristics (Time Behavior, Resource Utilization, Capacity)
@@ -128,6 +131,28 @@ performance-testing-exam/
 - Degraded response over time (memory leaks, disk fragmentation)
 - Inadequate error handling under load
 - Resource saturation and capacity issues
+
+### Chapter 2: Performance Measurement Fundamentals (10 Questions)
+
+**2.1 Typical Metrics Collected (PTFL-2.1.1)**
+- Understanding why performance metrics are essential
+- Response time, throughput, and resource utilization metrics
+- Risks of undertaking testing without defined metrics
+
+**2.2 Aggregating Results (PTFL-2.2.1)**
+- Why results from performance testing are aggregated
+- Identifying patterns and trends from aggregated data
+- Statistical measures derived from multiple test runs
+
+**2.3 Key Sources of Performance Metrics (PTFL-2.3.1)**
+- System under test as a metrics source
+- Monitoring tools and application logs
+- Understanding performance tool outputs
+
+**2.4 Typical Results (PTFL-2.4.1)**
+- Baseline performance measures for comparison
+- Evaluation criteria for acceptable vs unacceptable performance
+- Importance of measurable performance requirements
 
 ## Technologies Used
 
