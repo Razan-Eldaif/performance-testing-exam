@@ -56,10 +56,9 @@ npm config set registry https://registry.npmjs.org/
 npm install
 ```
 
-**5. Try using npx instead:**
+**5. Try using npm ci (for clean install from package.json):**
 ```bash
-npx create-react-app performance-testing-exam
-# Then copy src/ and public/ files from this repository
+npm ci
 ```
 
 ## Running the Application
