@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "ISTQB Performance Testing Quiz App",
   "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

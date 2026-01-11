@@ -28,6 +28,40 @@ cd performance-testing-exam
 npm install
 ```
 
+### Troubleshooting Installation Issues
+
+If you encounter errors during `npm install`, try these solutions:
+
+**1. Check Node.js version:**
+```bash
+node --version
+```
+Make sure you have Node.js version 14.0.0 or higher. If not, download the latest LTS version from [nodejs.org](https://nodejs.org/)
+
+**2. Clear npm cache:**
+```bash
+npm cache clean --force
+npm install
+```
+
+**3. Delete node_modules and reinstall:**
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+**4. Use a different npm registry (if you're behind a firewall or have network issues):**
+```bash
+npm config set registry https://registry.npmjs.org/
+npm install
+```
+
+**5. Try using npx instead:**
+```bash
+npx create-react-app performance-testing-exam
+# Then copy src/ and public/ files from this repository
+```
+
 ## Running the Application
 
 Start the development server:
