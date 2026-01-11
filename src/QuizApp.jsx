@@ -12,591 +12,591 @@ const QuizApp = () => {
       question: 'According to ISO 25010, which three sub-characteristics define performance efficiency in the Product Quality Model?',
       options: [
         'Time Behavior, Resource Utilization, and Capacity',
-        'Speed, Accuracy, and Reliability',
-        'Throughput, Latency, and Bandwidth',
-        'Load Handling, Stress Resistance, and Scalability'
+        'Time Behavior, Throughput, and Resource Utilization',
+        'Resource Efficiency, Time Utilization, and Capacity',
+        'Time Behavior, Resource Allocation, and Throughput Capacity'
       ],
       correctAnswer: 0
     },
     {
       question: 'What is the primary focus of endurance testing in performance testing?',
       options: [
-        'Testing the system with maximum concurrent users',
-        'Verifying system stability over a time frame specific to operational context and detecting resource capacity problems like memory leaks',
-        'Testing system recovery after failures',
-        'Measuring the time taken for system deployment'
+        'Verifying system stability and detecting memory leaks over an operational time frame',
+        'Verifying system recovery time and detecting resource exhaustion over extended periods',
+        'Verifying system load handling and detecting capacity issues over time',
+        'Verifying system stress resistance and detecting performance degradation over time'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Which type of performance testing focuses on the ability of a system to respond correctly to sudden bursts of peak loads and return to a steady state?',
       options: [
-        'Load Testing',
-        'Stress Testing',
+        'Load Testing with burst patterns',
+        'Stress Testing with intermittent peaks',
         'Spike Testing',
-        'Scalability Testing'
+        'Surge Testing with load variations'
       ],
       correctAnswer: 2
     },
     {
       question: 'In the context of load generation, which approach involves capturing user interaction at the communications protocol level and replaying scripts to simulate large numbers of users?',
       options: [
-        'Load Generation via the User Interface',
-        'Load Generation using Crowds',
-        'Load Generation via the Application Programming Interface (API)',
-        'Load Generation using Captured Communication Protocols'
+        'Load Generation via Protocol-based Interface Simulation',
+        'Load Generation using Captured Communication Protocols',
+        'Load Generation via User Interface Protocol Replay',
+        'Load Generation using Application Protocol Interface'
       ],
-      correctAnswer: 3
+      correctAnswer: 1
     },
     {
       question: 'What is the main objective of capacity testing?',
       options: [
-        'To test the system under conditions beyond its specified limits',
-        'To determine how many users and/or transactions a system will support while meeting stated performance objectives',
-        'To verify that the system can handle concurrent actions',
-        'To measure the system response time under normal load'
+        'To determine the maximum number of users and transactions a system will support while meeting performance objectives',
+        'To determine how many users and transactions a system will support while meeting stated performance objectives',
+        'To determine the system capacity for users and transactions before performance degrades',
+        'To determine optimal user and transaction volumes that maintain performance objectives'
       ],
       correctAnswer: 1
     },
     {
       question: 'Which static testing activity is particularly critical for performance testing because many performance defects are introduced in the architecture and design phase?',
       options: [
-        'Code review of unit test cases',
+        'Review of architecture, database schemas, and requirements focusing on performance aspects',
         'Review of requirements with focus on performance aspects, database schemas, and system/network architecture',
-        'Inspection of user interface mockups',
-        'Verification of deployment scripts'
+        'Review of system architecture, performance requirements, and database design specifications',
+        'Review of performance criteria, architectural documents, and schema definitions'
       ],
       correctAnswer: 1
     },
     {
       question: 'What is a common cause of "degraded response over time" failure mode in performance testing?',
       options: [
-        'Network latency and bad database design',
-        'Insufficient resource pools and undersized queues',
+        'Memory leaks, database growth, and disk fragmentation',
+        'Memory exhaustion, disk space reduction, and data accumulation',
         'Memory leaks, disk fragmentation, and unexpected database growth',
-        'Saturation of resources under heavy load'
+        'Resource depletion, storage fragmentation, and database expansion'
       ],
       correctAnswer: 2
     },
     {
       question: 'Which performance testing principle states that tests must yield results that are understandable and can be readily compared to stakeholder expectations?',
       options: [
-        'Tests must be reproducible with statistically identical results',
-        'Tests must be aligned to defined expectations of different stakeholder groups',
+        'Tests must yield comparable and understandable results for stakeholder evaluation',
+        'Tests must produce results that stakeholders can understand and compare to expectations',
         'Tests must yield results that are both understandable and can be readily compared to stakeholder expectations',
-        'Tests must be practically affordable and executable within project timeframe'
+        'Tests must generate understandable results readily comparable to stakeholder criteria'
       ],
       correctAnswer: 2
     },
     {
       question: 'What is the primary difference between concurrency testing and load testing?',
       options: [
+        'Concurrency testing evaluates simultaneous actions at the same time, while load testing evaluates increasing anticipated load levels',
         'Concurrency testing focuses on simultaneous actions occurring at the same time, while load testing focuses on increasing levels of anticipated loads',
-        'Concurrency testing is cheaper than load testing',
-        'Load testing only tests database performance',
-        'There is no significant difference between them'
-      ],
-      correctAnswer: 0
-    },
-    {
-      question: "In scalability testing, what is the main objective when determining the system's ability to grow?",
-      options: [
-        'To find the maximum number of bugs in the system',
-        'To determine if the system can meet future efficiency requirements without violating currently specified performance requirements',
-        'To reduce the cost of infrastructure',
-        'To eliminate the need for performance monitoring in production'
+        'Concurrency testing examines concurrent user actions, while load testing examines progressive load increases',
+        'Concurrency testing assesses simultaneous transactions, while load testing assesses graduated load patterns'
       ],
       correctAnswer: 1
     },
     {
+      question: "In scalability testing, what is the main objective when determining the system's ability to grow?",
+      options: [
+        'To determine if the system can meet future efficiency requirements without violating current performance requirements',
+        'To assess whether the system meets future performance needs while maintaining current efficiency standards',
+        'To evaluate if future efficiency requirements can be met without breaching existing performance criteria',
+        'To verify that future performance requirements are achievable without compromising present efficiency levels'
+      ],
+      correctAnswer: 0
+    },
+    {
       question: 'Which load generation approach is MOST suitable when testing needs to be reproducible, precise, and less sensitive to UI changes?',
       options: [
-        'Load Generation via the User Interface',
-        'Load Generation using Crowds',
+        'Load Generation using Protocol Communication Capture',
+        'Load Generation via Captured Protocol Communication',
         'Load Generation using Captured Communication Protocols',
-        'Manual testing by end users'
+        'Load Generation through Protocol-level Capture'
       ],
       correctAnswer: 2
     },
     {
       question: 'What is a typical cause of "slow response under moderate-to-heavy load levels" even when loads are within normal expected ranges?',
       options: [
-        'Bad database design and network latency',
-        'Memory leaks and disk fragmentation',
+        'Resource saturation and varying background system loads',
         'Saturation of one or more resources and varying background loads',
-        'Insufficient resource pools and too rapid time-out settings'
+        'Resource exhaustion and fluctuating background processing',
+        'System resource limitations and variable background workloads'
       ],
-      correctAnswer: 2
+      correctAnswer: 1
     },
     {
       question: 'According to the ISTQB syllabus, when should performance testing start in the development lifecycle?',
       options: [
-        'Only during system testing when the complete system is available',
+        'As early as possible, including unit testing using profiling and dynamic analysis tools',
         'As soon as possible, including during unit testing using profiling and dynamic analysis',
-        'Only during acceptance testing to build user confidence',
-        'After all functional testing is completed'
+        'At the earliest opportunity, including unit-level testing with profiling and analysis',
+        'From the beginning, including unit tests using profiling and dynamic code analysis'
       ],
       correctAnswer: 1
     },
     {
       question: 'Which quality sub-characteristic evaluates if the system can respond to user inputs within a specified time under specified conditions?',
       options: [
-        'Resource Utilization',
-        'Capacity',
+        'Response Time Behavior',
         'Time Behavior',
-        'Scalability'
+        'Temporal Behavior',
+        'Time Response'
       ],
-      correctAnswer: 2
+      correctAnswer: 1
     },
     {
       question: 'What is the primary advantage of using Load Generation via the Application Programming Interface (API) compared to UI-based load generation?',
       options: [
-        'It requires no programming skills',
+        'Less sensitive to UI changes and enables simulation of more users with available resources',
         'It is less sensitive to UI changes and allows more users to be simulated',
-        'It is always cheaper than other methods',
-        'It does not require any test scripts'
+        'Reduced UI dependency and increased user simulation capacity',
+        'Lower UI sensitivity and higher user simulation capability'
       ],
       correctAnswer: 1
     },
     {
       question: 'In performance testing, what does "inadequate or graceless error handling under heavy or over-limit load" typically indicate?',
       options: [
-        'Memory leaks and disk fragmentation issues',
-        'Network latency and bad database design',
+        'Insufficient resource pools, undersized queues, and rapid timeout configurations',
+        'Inadequate resource allocation, limited queue capacity, and quick timeout settings',
         'Insufficient resource pools, undersized queues and stacks, and too rapid time-out settings',
-        'Increasing network load over time'
+        'Limited resource availability, small queue sizes, and aggressive timeout parameters'
       ],
       correctAnswer: 2
     },
     {
       question: 'Which testing type should be performed when evaluating if functional suitability and usability are impacted under conditions of load?',
       options: [
-        'Only static testing of requirements',
+        'Dynamic performance testing revealing load-specific characteristic impacts',
         'Dynamic performance testing that may reveal load-specific issues impacting those characteristics',
-        'Only unit testing without load',
-        'Manual exploratory testing'
+        'Performance testing under load conditions to expose functional and usability impacts',
+        'Load-based performance testing to identify characteristic degradation'
       ],
       correctAnswer: 1
     },
     {
       question: 'What is the main purpose of using profiling information during unit testing in performance testing?',
       options: [
-        'To determine the number of test cases needed',
         'To identify potential bottlenecks and evaluate resource utilization',
-        'To verify functional correctness of the code',
-        'To measure code coverage percentages'
+        'To detect possible performance bottlenecks and assess resource usage',
+        'To locate potential performance constraints and measure resource consumption',
+        'To discover likely bottlenecks and analyze resource allocation'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Which performance testing principle emphasizes that tests must be reproducible?',
       options: [
-        'Tests must yield results comparable to expectations',
         'Tests must obtain statistically identical results within a specified tolerance by repeating tests on an unchanged system',
-        'Tests must be aligned to stakeholder expectations',
-        'Tests must be affordable within project timeframe'
+        'Tests must produce statistically equivalent results within tolerance by re-executing on stable systems',
+        'Tests must achieve statistically similar results within defined variance through repetition on unchanged systems',
+        'Tests must yield statistically consistent results within acceptable limits when repeated on unmodified systems'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'In the context of performance testing, what does Resource Utilization as a quality sub-characteristic focus on?',
       options: [
-        'The time taken to respond to user inputs',
-        'The number of concurrent users the system can handle',
         'The allocation and usage of limited system resources like RAM when identified as a risk',
-        'The cost of infrastructure for the system'
+        'The assignment and consumption of constrained resources such as memory when recognized as risks',
+        'The distribution and use of finite system resources like memory when determined as risk factors',
+        'The allocation and employment of restricted resources including RAM when classified as risks'
       ],
-      correctAnswer: 2
+      correctAnswer: 0
     },
     {
       question: 'According to ISTQB, which of the following is a key risk if performance metrics are not properly defined before testing?',
       options: [
-        'The testing team will have too many metrics to analyze',
         'Performance test results may be evaluated based on subjective opinion rather than measurable criteria',
-        'The cost of testing will increase significantly',
-        'Automated testing tools will not function properly'
+        'Test result evaluation may rely on subjective judgment instead of objective measurement standards',
+        'Results might be assessed using subjective opinions rather than quantifiable performance criteria',
+        'Evaluation of test outcomes could depend on subjective views instead of defined metrics'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Why are performance test results typically aggregated rather than analyzed individually?',
       options: [
-        'To reduce storage requirements for test data',
         'To identify patterns, trends, and statistical measures that individual results cannot reveal',
-        'To make testing faster and more efficient',
-        'To comply with industry regulations'
+        'To recognize patterns, tendencies, and statistical indicators not visible in individual results',
+        'To detect trends, patterns, and statistical measurements unavailable from single results',
+        'To discover patterns, statistical measures, and trends impossible to see individually'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Which of the following is a typical metric collected during performance testing?',
       options: [
-        'Number of developers working on the project',
         'Response time, throughput, and resource utilization',
-        'Lines of code written per day',
-        'Number of meetings held during testing'
+        'Transaction response time, throughput rates, and system resource usage',
+        'Response times, throughput measurements, and resource consumption',
+        'Time to respond, transaction throughput, and utilized resources'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What is the primary purpose of establishing a baseline set of performance measures?',
       options: [
-        'To document the testing process for auditors',
         'To compare actual test results against defined acceptable and unacceptable performance levels',
-        'To estimate the budget for future projects',
-        'To determine how many testers are needed'
+        'To evaluate actual results by comparing them to established acceptable and unacceptable thresholds',
+        'To assess test results against predetermined acceptable and unacceptable performance criteria',
+        'To measure actual outcomes versus defined acceptable and unacceptable performance standards'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Which of the following represents a key source of performance metrics during testing?',
       options: [
-        'Project management documentation only',
         'System under test, monitoring tools, and application logs',
-        'Developer interviews and code reviews',
-        'Customer satisfaction surveys'
+        'Test system, performance monitoring utilities, and application log files',
+        'System being tested, monitoring applications, and system logs',
+        'Target system, monitoring instruments, and application event logs'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What risk occurs when performance requirements are not defined in measurable terms?',
       options: [
-        'Testing will take longer than expected',
         'It becomes unknown whether performance levels are acceptable to meet operational objectives',
-        'More testers will be required',
-        'The application will automatically fail'
+        'It remains unclear if performance levels meet operational objective requirements',
+        'It is uncertain whether performance adequacy satisfies operational goals',
+        'It cannot be determined if performance levels achieve operational targets'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'In performance testing, why is it important to understand which measurements and metrics are needed before starting testing?',
       options: [
-        'To ensure the testing team has enough resources',
         'To prevent undertaking performance testing without clear goals and evaluation criteria',
-        'To satisfy management reporting requirements',
-        'To determine the programming language to use'
+        'To avoid conducting performance testing lacking defined objectives and assessment standards',
+        'To stop initiating performance testing absent clear targets and evaluation benchmarks',
+        'To prevent beginning performance testing without established goals and measurement criteria'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What is a consequence of not being able to identify trends that predict lower performance levels?',
       options: [
-        'The development team will work faster',
         'Potential performance degradation may go undetected until it impacts users',
-        'Testing costs will decrease',
-        'The application will use less memory'
+        'Possible performance decline could remain hidden until affecting end users',
+        'Performance deterioration might stay unnoticed until user experience is impacted',
+        'Performance reduction may go unobserved until users encounter issues'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Which statement best describes why understanding performance tool results is critical?',
       options: [
-        'It helps justify the cost of the testing tools',
         'Without understanding tool results, performance cannot be accurately evaluated and interpreted',
-        'It allows testers to use more expensive tools',
-        'It reduces the need for manual testing'
+        'Lacking tool result comprehension prevents accurate performance evaluation and analysis',
+        'Absence of tool result understanding impedes precise performance assessment and interpretation',
+        'Missing tool result knowledge hinders accurate performance evaluation and examination'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What is the relationship between measurements and metrics in performance testing?',
       options: [
-        'They are the same thing and can be used interchangeably',
         'Metrics are derived from measurements and used to define goals and evaluate results',
-        'Measurements are less important than metrics',
-        'Metrics are only used for reporting to management'
+        'Metrics originate from measurements and serve to establish objectives and assess outcomes',
+        'Metrics stem from measurements and function to set goals and evaluate findings',
+        'Metrics are calculated from measurements and employed to define targets and assess results'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'According to the ISTQB syllabus on collecting performance measurements, why must response time metrics be further defined beyond just measuring response time?',
       options: [
-        'To reduce testing costs',
         'To be meaningful and actionable, they must be defined in context such as time of day, concurrent users, and data volume',
-        'To comply with regulatory requirements',
-        'To simplify test automation'
+        'For meaningfulness and actionability, they require contextual definition including timing, user concurrency, and data quantities',
+        'To achieve significance and usability, they need context specification like time periods, simultaneous users, and data amounts',
+        'For relevance and applicability, they must be contextualized with factors like time, concurrent access, and data scale'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'In what ways do performance metrics vary based on the business context versus the operational context?',
       options: [
-        'They do not vary; all metrics are standard across contexts',
         'Business context focuses on processes and stakeholder expectations; operational context focuses on technology usage',
-        'Business metrics are always more important than operational metrics',
-        'Operational metrics only measure hardware performance'
+        'Business context emphasizes processes and stakeholder needs; operational context emphasizes technology application',
+        'Business context centers on workflows and stakeholder requirements; operational context centers on technology deployment',
+        'Business context addresses processes and stakeholder demands; operational context addresses technology implementation'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Why would the metrics chosen for an international e-commerce website differ significantly from those for an embedded medical device system?',
       options: [
-        'Medical devices do not require performance testing',
         'Different technical environments, business contexts, and test objectives require context-appropriate metrics',
-        'E-commerce sites only need to measure page load times',
-        'Medical devices only need functional testing'
+        'Varying technical settings, business situations, and testing goals demand contextually-suitable metrics',
+        'Distinct technical platforms, business scenarios, and test purposes necessitate context-specific metrics',
+        'Diverse technical infrastructures, business contexts, and testing objectives need context-relevant metrics'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Which of the following is an example of a performance metric from the Technical Environment category?',
       options: [
-        'Business process efficiency and SLA compliance rates',
-        'Throughput rate of transactions and batch processing times',
         'Response time per transaction, resource utilization (CPU, memory), and network latency',
-        'Operational processes like environment start-up time'
+        'Transaction response time, system resource usage (processor, memory), and network delay',
+        'Per-transaction response time, resource consumption (CPU, RAM), and network lag',
+        'Response time by transaction, resource allocation (CPU, memory), and network latency'
       ],
-      correctAnswer: 2
+      correctAnswer: 0
     },
     {
       question: 'From a Business Environment perspective, what does "throughput of data, transactions, and other units of work" measure?',
       options: [
-        'The speed of network connections',
         'Quantities like orders processed per hour or data rows added per minute',
-        'The number of test cases executed',
-        'CPU utilization percentages'
+        'Quantities such as hourly orders processed or minute-by-minute data rows added',
+        'Amounts like orders per hour processed or data rows per minute added',
+        'Volumes such as hourly processed orders or per-minute added data rows'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What is an example of an Operational Environment performance metric?',
       options: [
-        'Number of concurrent users during peak load',
-        'Page load times for web applications',
         'Time required for environment start-up, backups, shutdown, and system restoration',
-        'SLA compliance and violation rates'
+        'Duration needed for environment startup, backup operations, shutdown, and system recovery',
+        'Time necessary for system initialization, backup processes, termination, and restoration',
+        'Period required for environment launching, backing up, shutting down, and system restoring'
       ],
-      correctAnswer: 2
+      correctAnswer: 0
     },
     {
       question: 'Which metric would be most relevant when evaluating Service Level Agreement (SLA) compliance in the Business Environment?',
       options: [
-        'Memory utilization and disk I/O rates',
         'SLA violations per unit of time and business process efficiency',
-        'Network bandwidth and throughput',
-        'Code complexity metrics'
+        'SLA breaches per time unit and business workflow efficiency',
+        'SLA non-compliance per time period and business process effectiveness',
+        'SLA contraventions per time interval and business operation efficiency'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'In section 2.1.3, why is collecting MORE metrics than required considered problematic?',
       options: [
-        'It makes the testing team look unprofessional',
         'Each metric requires consistent collection and reporting effort; excessive metrics waste resources without adding value',
-        'More metrics always lead to better testing',
-        'It increases hardware costs'
+        'Every metric demands consistent gathering and reporting work; surplus metrics consume resources without benefit',
+        'All metrics need consistent collection and reporting; extra metrics expend resources without value addition',
+        'Each metric necessitates consistent capture and reporting; redundant metrics use resources without providing value'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What is the Goal-Question-Metric (GQM) approach designed to achieve in performance testing?',
       options: [
-        'To eliminate all performance testing costs',
         'To align metrics with performance goals by establishing goals, asking questions about achievement, and associating measurable metrics',
-        'To replace all manual testing with automation',
-        'To reduce the number of developers needed'
+        'To synchronize metrics with performance objectives by setting goals, posing achievement questions, and linking quantifiable metrics',
+        'To correlate metrics with performance targets by defining goals, questioning achievement, and connecting measurable metrics',
+        'To match metrics with performance aims by creating goals, inquiring about achievement, and attaching measurable metrics'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'According to the syllabus, when does the GQM approach NOT always fit the performance testing process?',
       options: [
-        'When testing web applications',
         'When some metrics represent system health and are not directly linked to specific goals',
-        'When using automated testing tools',
-        'When testing mobile applications'
+        'When certain metrics indicate system health and lack direct connection to particular goals',
+        'When particular metrics reflect system health and are not explicitly tied to specific goals',
+        'When specific metrics show system health and are not immediately connected to defined goals'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Why might additional measurements and metrics be needed after capturing initial measurements?',
       options: [
-        'To justify the testing budget',
         'To understand true performance levels and determine where corrective actions are needed',
-        'To impress stakeholders with more data',
-        'To extend the testing timeline'
+        'To comprehend actual performance levels and identify where remedial actions are required',
+        'To grasp genuine performance levels and establish where corrective measures are necessary',
+        'To perceive real performance levels and ascertain where corrective steps are needed'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'In section 2.2 on Aggregating Results, what is the PRIMARY purpose of aggregating performance metrics?',
       options: [
-        'To reduce data storage requirements',
         'To understand and express metrics in a way that accurately conveys the total picture of system performance',
-        'To simplify report generation for management',
-        'To hide poor performance results'
+        'To comprehend and communicate metrics in a manner that precisely represents the complete system performance picture',
+        'To grasp and present metrics in a way that correctly portrays the overall system performance view',
+        'To interpret and articulate metrics in a fashion that accurately depicts the entire system performance scenario'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Why is drawing conclusions from detailed-level performance metrics alone particularly difficult for business stakeholders?',
       options: [
-        'Business stakeholders lack technical knowledge',
         'Detailed metrics do not show the "big picture" and trends that stakeholders need to understand system performance',
-        'Detailed metrics are always incorrect',
-        'Business stakeholders prefer graphical reports only'
+        'Granular metrics fail to display the overall view and patterns that stakeholders require for system performance understanding',
+        'Specific metrics do not present the comprehensive picture and tendencies that stakeholders need for performance comprehension',
+        'Detailed metrics lack the macro perspective and trends that stakeholders necessitate to grasp system performance'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What are the three key benefits of aggregating performance metrics according to section 2.2?',
       options: [
-        'Reduced costs, faster testing, and fewer resources needed',
         'Stakeholders can see big picture status, performance trends can be identified, and metrics can be reported understandably',
-        'More test cases, better automation, and improved code quality',
-        'Simpler tools, less training needed, and quicker deployments'
+        'Stakeholders view overall status, performance patterns are identifiable, and metrics are reportable comprehensibly',
+        'Stakeholders observe holistic status, performance tendencies are recognizable, and metrics are communicable clearly',
+        'Stakeholders perceive macro status, performance trends are detectable, and metrics are presentable intelligibly'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What is the "probe effect" in performance testing as described in section 2.3?',
       options: [
-        'The effect of using monitoring probes in hardware',
         'The impact that metrics collection effort has on system performance being measured',
-        'A type of performance testing tool',
-        'The process of debugging performance issues'
+        'The influence that metric gathering activities have on the system performance under measurement',
+        'The effect that metrics collection work has on measured system performance',
+        'The impact that metric capture efforts have on system performance under evaluation'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'According to section 2.3, what are the three key sources of performance metrics?',
       options: [
-        'Developers, testers, and managers',
         'Performance Test Tools, Performance Monitoring Tools, and Log Analysis Tools',
-        'Hardware, software, and network',
-        'Requirements, design documents, and code'
+        'Performance Testing Tools, Performance Monitoring Applications, and Log Analysis Utilities',
+        'Performance Test Instruments, Performance Monitoring Solutions, and Log Analysis Tools',
+        'Performance Testing Utilities, Performance Monitoring Tools, and Log Analysis Applications'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'How do performance test tools vary in their presentation of metrics according to the syllabus?',
       options: [
-        'All tools present metrics identically',
         'Tools vary in number of metrics shown, display format (text vs. graphical/dashboard), and customization capabilities',
-        'Only expensive tools show metrics graphically',
-        'Text-based tools are always better than graphical tools'
+        'Tools differ in metrics quantity displayed, presentation format (textual vs. graphical/dashboard), and customization options',
+        'Tools diverge in shown metrics count, display style (text vs. graphical/dashboard), and customization features',
+        'Tools vary in displayed metrics volume, format type (text vs. graphical/dashboard), and customization abilities'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What is a key purpose of Performance Monitoring Tools beyond supplementing performance test tool reporting?',
       options: [
-        'To replace performance test tools entirely',
         'To monitor system performance ongoing, alert administrators to lowered performance, and detect suspicious behavior like DoS attacks',
-        'To write test scripts automatically',
-        'To generate code coverage reports'
+        'To continuously monitor system performance, notify administrators of performance degradation, and identify suspicious activities like DoS attacks',
+        'To observe system performance continuously, alert administrators about performance reduction, and detect suspicious actions like DoS attacks',
+        'To track system performance continuously, warn administrators of performance decreases, and discover suspicious behavior like DoS attacks'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What do Log Analysis Tools provide that complements other performance metrics sources?',
       options: [
-        'Real-time user interface testing',
         'Scanning of server logs to compile metrics and create graphical charts',
-        'Automated code refactoring',
-        'Database schema optimization'
+        'Server log scanning to aggregate metrics and generate graphical visualizations',
+        'Analysis of server logs to collect metrics and produce graphical representations',
+        'Examination of server logs to gather metrics and develop graphical displays'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'In section 2.4, why is performance testing described as often lacking well-defined test oracles compared to functional testing?',
       options: [
-        'Performance testing tools are not mature',
         'Stakeholders are notoriously bad at articulating performance requirements, and analysts/owners are bad at eliciting them',
-        'Performance testing is a new discipline',
-        'Functional testing is easier than performance testing'
+        'Stakeholders are notably poor at expressing performance requirements, and analysts/owners are inadequate at extracting them',
+        'Stakeholders are famously weak at communicating performance requirements, and analysts/owners are ineffective at obtaining them',
+        'Stakeholders are recognized as poor at stating performance requirements, and analysts/owners are deficient at deriving them'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'According to section 2.4, why can initial raw performance test results be misleading?',
       options: [
-        'Testing tools always produce errors',
         'Performance failures can be hidden beneath apparently good overall results; e.g., low resource utilization but unacceptable throughput',
-        'Raw results are never accurate',
-        'Only aggregated results matter'
+        'Performance issues may be concealed under seemingly acceptable aggregate results; e.g., minimal resource usage but inadequate throughput',
+        'Performance problems can be masked by apparently satisfactory general results; e.g., reduced resource consumption but poor throughput',
+        'Performance defects may hide beneath seemingly good total results; e.g., low resource employment but insufficient throughput'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'In the example from section 2.4, what scenario demonstrates hidden performance failures?',
       options: [
-        'High CPU usage with fast response times',
         'Resource utilization well under 75% but throughput/response time an order of magnitude too slow',
-        'High memory usage with many concurrent users',
-        'Network latency causing database timeouts'
+        'Resource usage significantly below 75% but throughput/response time an order of magnitude excessively slow',
+        'Resource consumption well beneath 75% but throughput/response time an order of magnitude too sluggish',
+        'Resource allocation substantially under 75% but throughput/response time an order of magnitude overly slow'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Which of the following technical environment metrics would be MOST relevant for IoT (Internet-of-Things) systems?',
       options: [
-        'Page load times and browser compatibility',
         'Battery consumption, network bandwidth in constrained environments, and resource utilization in embedded contexts',
-        'Desktop application response times',
-        'Mainframe batch processing times'
+        'Power consumption, network capacity in limited environments, and resource usage in embedded scenarios',
+        'Energy consumption, network bandwidth in restricted environments, and resource allocation in embedded situations',
+        'Battery usage, network throughput in constrained environments, and resource employment in embedded contexts'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'For a web-based application, which combination of metrics from the technical environment category would be most comprehensive?',
       options: [
-        'Only server CPU and memory',
         'Response time per transaction/user, page load times, throughput rates, network bandwidth, and server resource utilization',
-        'Just database query times',
-        'Only network latency measurements'
+        'Transaction/user response time, page loading times, throughput measurements, network capacity, and server resource usage',
+        'Per-transaction/user response time, page load durations, throughput metrics, network bandwidth, and server resource consumption',
+        'Response times per transaction/user, page loading periods, throughput rates, network capacity, and server resource allocation'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What is "scope of usage" as a Business Environment metric?',
       options: [
-        'The number of lines of code in the application',
         'The percentage of global or national users conducting tasks at a given time',
-        'The physical location of servers',
-        'The number of developers on the team'
+        'The proportion of worldwide or national users performing tasks at a specific time',
+        'The fraction of global or national users executing tasks at a particular time',
+        'The share of international or national users undertaking tasks at a given moment'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Why is "timing of usage" (e.g., orders processed during peak load times) an important Business Environment metric?',
       options: [
-        'It determines office hours for the development team',
         'It helps understand system behavior under real-world usage patterns and peak demand periods',
-        'It measures employee productivity',
-        'It tracks project timeline adherence'
+        'It assists in comprehending system behavior under actual usage patterns and maximum demand periods',
+        'It aids in understanding system conduct under practical usage patterns and peak demand intervals',
+        'It facilitates understanding system performance under realistic usage patterns and high demand periods'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'Which statement best describes why "concurrency of usage" differs from "scope of usage" as business metrics?',
       options: [
-        'They measure the same thing',
         'Concurrency measures simultaneous users performing tasks; scope measures total user population percentage active at any time',
-        'Concurrency is only for technical teams',
-        'Scope is only for financial reporting'
+        'Concurrency gauges concurrent users executing tasks; scope measures overall user base percentage active at given times',
+        'Concurrency assesses simultaneous users conducting tasks; scope measures aggregate user population percentage active at any moment',
+        'Concurrency evaluates concurrent users performing tasks; scope measures entire user base percentage active at specific times'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'In the Operational Environment, why is "system restoration time from backup" a critical metric?',
       options: [
-        'It measures developer efficiency',
         'It indicates disaster recovery capability and business continuity readiness',
-        'It tracks backup storage costs',
-        'It measures network speed'
+        'It signifies disaster recovery capacity and business continuity preparedness',
+        'It demonstrates disaster recovery ability and business continuity readiness',
+        'It reflects disaster recovery capability and business continuity preparation'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     },
     {
       question: 'What makes "alerts and warnings timing" an important operational metric?',
       options: [
-        'It tracks how many emails administrators receive',
         'System must issue alerts/warnings quickly enough for timely response to prevent or minimize service degradation',
-        'It measures log file sizes',
-        'It determines holiday schedules'
+        'Systems must generate alerts/warnings rapidly enough for prompt response to avoid or reduce service deterioration',
+        'System must produce alerts/warnings swiftly enough for timely response to prevent or lessen service degradation',
+        'Systems must emit alerts/warnings fast enough for quick response to avert or minimize service decline'
       ],
-      correctAnswer: 1
+      correctAnswer: 0
     }
   ];
 
