@@ -597,6 +597,216 @@ const QuizApp = () => {
         'Systems must emit alerts/warnings fast enough for quick response to avert or minimize service decline'
       ],
       correctAnswer: 0
+    },
+    {
+      question: 'Why is performance testing described as iterative in nature according to ISTQB?',
+      options: [
+        'Each test iteration provides insights used to correct or optimize application parameters, with next iteration showing results of modifications until objectives are reached',
+        'Each test cycle provides information used to adjust application settings, with subsequent cycles showing outcome of adjustments until goals are met',
+        'Each test provides insights used to modify or enhance application parameters, with following test displaying results of changes until objectives are achieved',
+        'Each test round provides feedback used to correct application configurations, with next round showing effects of corrections until targets are met'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'In sequential development models, at which phase should performance goals first be defined as acceptance criteria?',
+      options: [
+        'Analysis and Design phase',
+        'Requirements phase',
+        'Concept phase',
+        'Planning phase'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What type of performance risk is specific to single computer systems?',
+      options: [
+        'Network bottlenecks and bandwidth limitations',
+        'Critical workflows through unreliable remote servers',
+        'Excessive resource consumption including memory leaks and slow storage subsystems',
+        'Poor database design and inadequate capacity on servers'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'Which performance risk is unique to distributed systems compared to multi-tier systems?',
+      options: [
+        'Inefficient algorithm implementation not utilizing available resources',
+        'Critical workflows or dataflows through unreliable or unpredictable remote servers',
+        'Poor or non-scalable database design causing degradation',
+        'Network bottlenecks and inadequate bandwidth on servers'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'In multi-tier systems, which performance risk is additional to those found in single computer systems?',
+      options: [
+        'Memory leaks and background activities like security software',
+        'Inefficient algorithms that do not make use of main memory',
+        'Poor or non-scalable database design and network bottlenecks',
+        'Disk fragmentation and operating system mismanagement'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What is the first step in the performance risk analysis process across the software development lifecycle?',
+      options: [
+        'Assess identified risks ensuring architecture categories are addressed',
+        'Manage risks on ongoing basis to ensure adequate mitigation',
+        'Identify risks to product quality focusing on time behavior, resource utilization, and capacity',
+        'Take appropriate risk mitigation actions based on risk level'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'When assessing performance-related risks, what must be evaluated for each identified risk?',
+      options: [
+        'Overall level of risk in terms of likelihood and impact using clearly defined criteria',
+        'Total risk level in terms of probability and consequence using specific criteria',
+        'Complete risk level in terms of chance and effect using defined criteria',
+        'Full risk level in terms of possibility and result using established criteria'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'Why must business stakeholders in performance risk analysis have particular awareness of production performance problems?',
+      options: [
+        'To understand how performance issues in production will actually affect customers, users, the business, and downstream stakeholders',
+        'To comprehend how performance problems in production will impact customers, users, business operations, and other stakeholders',
+        'To recognize how performance challenges in production will influence customers, users, business, and subsequent stakeholders',
+        'To appreciate how performance difficulties in production will affect end users, customers, business processes, and related stakeholders'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'In sequential development models, what should be verified during the Requirements phase?',
+      options: [
+        'That system performance goals are defined as acceptance criteria',
+        'That the system design reflects the performance requirements',
+        'That performance requirements are defined and represent stakeholder needs correctly',
+        'That the code is efficient and reflects requirements in terms of performance'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What should be verified during the Analysis and Design phase in sequential development?',
+      options: [
+        'That performance requirements are defined correctly',
+        'That the system design reflects the performance requirements',
+        'That the code reflects requirements and design in terms of performance',
+        'That system performance goals are defined as acceptance criteria'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'During which testing level in sequential development should performance testing be conducted with hardware, software, procedures and data representative of production environment?',
+      options: [
+        'System Integration Testing',
+        'Acceptance Testing',
+        'System Testing',
+        'Component Integration Testing'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What distinguishes System Integration Testing from System Testing in sequential performance testing activities?',
+      options: [
+        'System Integration Testing uses simulated interfaces while System Testing uses representative production data',
+        'System Integration Testing is conducted with entire system representative of production while System Testing may use simulated interfaces',
+        'System Integration Testing validates performance meets acceptance criteria while System Testing conducts system level testing',
+        'System Integration Testing includes component integration while System Testing focuses on individual components'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Why is test planning particularly important for performance testing?',
+      options: [
+        'Due to the need for allocation of test environments, test data, tools, human resources, and establishing performance testing scope',
+        'Due to the requirement for allocating test infrastructure, test information, tools, personnel, and defining performance test scope',
+        'Due to the necessity of assigning test environments, test datasets, tools, resources, and determining performance testing scope',
+        'Due to the demand for distributing test systems, test data, tools, staff, and establishing performance test boundaries'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'During test planning for performance testing, what happens to risks, risk levels and risk status?',
+      options: [
+        'They are identified once at the beginning and remain fixed throughout',
+        'They are revisited and modified as needed to reflect changes in risk conditions',
+        'They are assessed at the end of planning and updated before testing',
+        'They are analyzed during execution and modified during test closure'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What causes "slow response under all load levels" failure mode?',
+      options: [
+        'Memory leaks, disk fragmentation, and unexpected database growth',
+        'Resource saturation, concurrent background loads, and insufficient connection pools',
+        'Insufficient resource pools, undersized queues, and inadequate error handling',
+        'Bad database design, network latency, and inefficient code or queries'
+      ],
+      correctAnswer: 3
+    },
+    {
+      question: 'What typically causes "slow response under moderate-to-heavy load" compared to light load?',
+      options: [
+        'Memory leaks, disk fragmentation, and database growth over time',
+        'Bad database design, network latency, and inefficient queries',
+        'Insufficient resource pools, undersized queues, and poor error handling',
+        'Resource saturation, concurrent background loads, and insufficient capacity'
+      ],
+      correctAnswer: 3
+    },
+    {
+      question: 'What causes "inadequate or slow error handling under heavy load" failure mode?',
+      options: [
+        'Resource saturation and concurrent background loads',
+        'Memory leaks and unexpected database growth',
+        'Insufficient resource pools and undersized queues',
+        'Bad database design and network latency'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'In the four-step performance risk process, what is done after taking appropriate risk mitigation actions?',
+      options: [
+        'Identify new risks to product quality',
+        'Assess the identified risks using defined criteria',
+        'Manage risks on ongoing basis to ensure adequate mitigation prior to release',
+        'Evaluate overall level of risk in terms of likelihood and impact'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What must technical stakeholders understand in performance risk analysis?',
+      options: [
+        'How performance problems affect customers and downstream stakeholders',
+        'The relevant architecture categories and their associated risks',
+        'Business processes and customer behavior patterns',
+        'Intended usage and business workflows of the system'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which component testing activity is specific to performance in sequential development?',
+      options: [
+        'Verify that system design reflects performance requirements',
+        'Conduct performance testing at component integration level',
+        'Conduct component level performance testing',
+        'Verify that code is efficient and reflects requirements'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'At the Coding/Implementation phase, what should be verified for performance?',
+      options: [
+        'That system design reflects the performance requirements',
+        'That performance requirements represent stakeholder needs correctly',
+        'That the code is efficient and reflects requirements and design in terms of performance',
+        'That system performance goals are defined as acceptance criteria'
+      ],
+      correctAnswer: 2
     }
   ];
 
