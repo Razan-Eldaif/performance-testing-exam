@@ -807,6 +807,206 @@ const QuizApp = () => {
         'That system performance goals are defined as acceptance criteria'
       ],
       correctAnswer: 2
+    },
+    {
+      question: 'Which factors are of primary interest to business stakeholders when communicating about performance testing?',
+      options: [
+        'Connection between product risks and test objectives, cost vs representativeness balance, and test repeatability',
+        'Tooling, scripting approaches, load generation techniques, and infrastructure setup details',
+        'Protocol selection, architecture considerations, and technical implementation details',
+        'Test execution procedures, monitoring configurations, and detailed metrics collection methods'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'What typical risks should be communicated to business stakeholders regarding performance testing?',
+      options: [
+        'Infrastructure requirements including hardware, tools, bandwidth, test environments, and key staff dependencies',
+        'Protocol compatibility issues, OSI layer mismatches, and technical integration challenges',
+        'Code quality concerns, algorithmic efficiency problems, and implementation defects',
+        'Monitoring tool limitations, metrics collection accuracy, and reporting format incompatibilities'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'Which OSI model layers are most commonly used for performance testing protocols?',
+      options: [
+        'Layer 3 (Network Layer) to Layer 5 (Session Layer)',
+        'Layer 5 (Session Layer) to Layer 7 (Application Layer)',
+        'Layer 4 (Transport Layer) to Layer 6 (Presentation Layer)',
+        'Layer 2 (Data Link Layer) to Layer 4 (Transport Layer)'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'When testing low-level embedded architectures for performance, which OSI layers are typically most in focus?',
+      options: [
+        'The upper numbered layers of the OSI model',
+        'The middle numbered layers of the OSI model',
+        'The application and presentation layers primarily',
+        'The lower numbered layers of the OSI model'
+      ],
+      correctAnswer: 3
+    },
+    {
+      question: 'Which protocols are commonly used for database performance testing?',
+      options: [
+        'HTTP, HTTPS, and REST protocols',
+        'SOAP, JSON, and WSCL protocols',
+        'ODBC, JDBC, and vendor-specific protocols',
+        'FTP, SMTP, and LDAP protocols'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What is the relationship between transaction response time, think time, and elapsed time?',
+      options: [
+        'Transaction response time minus think time equals elapsed time',
+        'Transaction response time multiplied by think time equals elapsed time',
+        'Transaction response time plus think time equals elapsed time',
+        'Transaction response time divided by think time equals elapsed time'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What is the purpose of including think time in simulated transactions?',
+      options: [
+        'To artificially increase system load and stress test capabilities',
+        'To better reflect the timing of real user actions during performance testing',
+        'To measure network latency between client and server components',
+        'To calculate the total processing time required by the system'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'In the context of nested transactions, what benefit do they provide during performance testing?',
+      options: [
+        'They reduce the complexity of test script maintenance and execution',
+        'They improve the accuracy of load generation and resource utilization',
+        'They enable measurement of both discrete steps and aggregate activities in one test',
+        'They simplify the correlation of performance metrics across system components'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'Which three principal steps are involved in identifying operational profiles?',
+      options: [
+        'Define objectives, Execute tests, Analyze results',
+        'Identify data to gather, Gather data from sources, Evaluate data to construct profiles',
+        'Plan testing, Design scenarios, Implement scripts',
+        'Collect requirements, Model behaviors, Validate profiles'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What types of data are gathered to model operational profiles for user interactions?',
+      options: [
+        'System architecture diagrams, database schemas, and network topologies',
+        'Server configurations, resource allocations, and capacity specifications',
+        'User personas and roles, generic tasks performed, and estimated user numbers per role/task',
+        'Application code metrics, API endpoints, and protocol specifications'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'Which sources are valuable for gathering data to construct operational profiles?',
+      options: [
+        'System logs, performance monitoring tools, and automated test results',
+        'Interviews with stakeholders, functional specifications, and requirements documents',
+        'Code repositories, build artifacts, and deployment configurations',
+        'Network traffic analysis, resource utilization reports, and capacity planning tools'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What is a load profile in performance testing?',
+      options: [
+        'A specification of the activity a system may experience in production using virtual users performing operational profiles over time',
+        'A document describing the hardware and software requirements for test execution environments',
+        'A chart showing the relationship between system response time and concurrent user load',
+        'A plan outlining the sequence of test scenarios to be executed during performance testing'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'What is the term commonly applied to instances that perform actions in a load profile when those instances are users?',
+      options: [
+        'Simulated users',
+        'Virtual users',
+        'Test users',
+        'Synthetic users'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which principal information is required to create a realistic and repeatable load profile?',
+      options: [
+        'Test tool capabilities, script complexity, and execution infrastructure specifications',
+        'Performance testing objective, operational profiles, throughput/concurrency issues, and quantity/time distribution',
+        'Defect tracking procedures, incident management processes, and reporting requirements',
+        'Security protocols, authentication mechanisms, and access control configurations'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'What does a "ramp-up" load profile pattern involve?',
+      options: [
+        'Instantaneous changes in load at specific time intervals',
+        'Steadily decreasing load over the duration of the test',
+        'Steadily increasing load over the duration of the test',
+        'Maintaining constant load throughout the entire test period'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What characterizes a "step" load profile pattern?',
+      options: [
+        'Gradually increasing load by adding one user at regular intervals',
+        'Gradually decreasing load by removing users at regular intervals',
+        'Instantaneous changes in load such as adding many virtual users at once',
+        'Maintaining a baseline load that fluctuates randomly within defined boundaries'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What type of load profile pattern mimics daily or seasonal business cycles?',
+      options: [
+        'Ramp-up patterns with linear progression',
+        'Ramp-down patterns with linear regression',
+        'Step patterns with discrete increments',
+        'Predefined distributions matching business volume variations'
+      ],
+      correctAnswer: 3
+    },
+    {
+      question: 'What performance testing limitation may produce risks according to the ISTQB syllabus?',
+      options: [
+        'Excessive test coverage and over-instrumentation of the system',
+        'External interfaces that cannot be simulated, insufficient load, or inability to monitor servers',
+        'Too many virtual users causing system crashes during test execution',
+        'Overly detailed operational profiles that are difficult to implement'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which communication protocols are typically used for mobile performance testing?',
+      options: [
+        'ODBC, JDBC, and database vendor protocols',
+        'HTTP, HTTPS, and HTML protocols',
+        'TruClient, SMP, and MMS protocols',
+        'FTP, IMAP, and POP3 protocols'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What is an example of a "background load" in a load profile construction?',
+      options: [
+        'A gradually increasing number of virtual users performing complex transactions',
+        'A step input of virtual users performing operational profile activities over the entire test duration',
+        'A varying load pattern that mimics peak business hours and off-peak periods',
+        'A decreasing load pattern simulating user logout behavior at end of day'
+      ],
+      correctAnswer: 1
     }
   ];
 
