@@ -1007,6 +1007,106 @@ const QuizApp = () => {
         'A decreasing load pattern simulating user logout behavior at end of day'
       ],
       correctAnswer: 1
+    },
+    {
+      question: 'What is the primary purpose of the initialization section in a performance test script structure?',
+      options: [
+        'To prepare and set up everything required before the main performance test execution begins',
+        'To clean up resources and close connections after the performance test completes',
+        'To execute the main load generation activities that create the performance load',
+        'To validate that all virtual users have completed their assigned transactions'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'In performance test scripting, what does "correlation" refer to?',
+      options: [
+        'The statistical relationship between two or more performance metrics during test execution',
+        'Replacing recorded internal identifiers with variables extracted from request responses for subsequent transactions',
+        'Matching the performance test results with production system behavior patterns',
+        'Coordinating multiple virtual users to execute transactions simultaneously'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which of the following is the MOST important reason why incorrect correlation causes recorded scripts to fail?',
+      options: [
+        'Context-dependent identifiers are not properly replaced with dynamic values between test runs',
+        'The script execution speed does not match the original recording pace',
+        'Think time values are not accurately captured during the recording phase',
+        'Load generation tools cannot parse the recorded protocol-level communication'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'What is the primary difference between recording scripts at the protocol level versus programming scripts?',
+      options: [
+        'Recording ensures exact simulation of the real system, while programming relies on knowledge of proper request sequence',
+        'Programming scripts execute faster than recorded scripts during performance test execution',
+        'Recording requires less parameterization effort compared to programmed scripts',
+        'Programmed scripts can only be created using GUI actions, while recording uses API calls'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'Why is it critical that the performance test environment closely resembles the production environment?',
+      options: [
+        'Performance is a linear function of the environment, making scaling calculations straightforward',
+        'Performance is a non-linear function of the environment, making accurate projections increasingly difficult as differences grow',
+        'Test environment differences only affect functional testing results, not performance testing',
+        'Scaled-down test environments always provide reliable performance projections regardless of differences'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which aspect of the test environment has the MOST dramatic impact on load test results?',
+      options: [
+        'The version of the load testing tool being used for test execution',
+        'The physical location and network distance between test infrastructure and system under test',
+        'The size and structure of the test data compared to production data',
+        'The operating system version running on the monitoring servers'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What is a "steady state" in the context of performance test execution?',
+      options: [
+        'When all simulated users are initiated and performing work as designed with stable system behavior',
+        'When the load is gradually increasing during the ramp-up phase of the test',
+        'When virtual users are being removed from the system during the ramp-down phase',
+        'When the system experiences varying load patterns that change throughout the test'
+      ],
+      correctAnswer: 0
+    },
+    {
+      question: 'Why is testing transient states (when system behavior is changing) particularly challenging?',
+      options: [
+        'Transient states only occur during functional testing, not during performance testing',
+        'Load testing tools cannot accurately monitor system metrics during load changes',
+        'Standard monitoring approaches like averages may be very misleading during transient states',
+        'Virtual users cannot be added or removed while the performance test is executing'
+      ],
+      correctAnswer: 2
+    },
+    {
+      question: 'What is the recommended approach during ramp-up to ensure the system can handle increasing load?',
+      options: [
+        'Implement instantaneous load changes to quickly identify the breaking point',
+        'Implement incremental load states to monitor the impact of steadily increasing load on system response',
+        'Maintain constant load throughout the ramp-up to establish baseline performance',
+        'Decrease load incrementally to verify system stability under reducing stress'
+      ],
+      correctAnswer: 1
+    },
+    {
+      question: 'Which scenario would MOST benefit from testing transient states rather than steady states?',
+      options: [
+        'Evaluating system performance during normal business operations with consistent user activity',
+        'Measuring baseline response times when the system is idle with no user load',
+        'Testing concurrent login of a large number of users or spike test scenarios',
+        'Validating that the system maintains stable performance over extended time periods'
+      ],
+      correctAnswer: 2
     }
   ];
 
