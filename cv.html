@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>السيرة الذاتية – نسيبة يوسف فرح جبريل</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, 'Segoe UI', sans-serif;
+      direction: rtl;
+      background: #fff;
+      color: #111;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .page {
+      max-width: 850px;
+      margin: 30px auto;
+      background: #fff;
+      border: 1px solid #aaa;
+      overflow: hidden;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: #fff;
+      color: #111;
+      padding: 32px 40px 22px;
+      text-align: center;
+      border-bottom: 3px double #111;
+    }
+
+    .header h1 {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .header .title-label {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .header .contact-line {
+      font-size: 13px;
+      margin-top: 6px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .header .contact-line span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* ===== BODY LAYOUT ===== */
+    .body-wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 270px;
+      min-width: 270px;
+      background: #f7f7f7;
+      padding: 26px 18px;
+      border-left: 1px solid #ccc;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .main {
+      flex: 1;
+      padding: 26px 30px;
+    }
+
+    /* ===== SECTION TITLES ===== */
+    .section-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #111;
+      border-bottom: 2px solid #111;
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+      margin-top: 22px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .section-title:first-of-type {
+      margin-top: 0;
+    }
+
+    /* ===== OBJECTIVE ===== */
+    .objective-text {
+      font-size: 13px;
+      color: #222;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* ===== EXPERIENCE ITEM ===== */
+    .exp-item {
+      margin-bottom: 18px;
+      padding-right: 12px;
+      border-right: 3px solid #555;
+    }
+
+    .exp-item .job-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .exp-item .school-name {
+      font-size: 13px;
+      color: #333;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .exp-item .date-range {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .exp-item ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .exp-item ul li::before {
+      content: "– ";
+      font-weight: bold;
+    }
+
+    .exp-item ul li {
+      font-size: 13px;
+      color: #222;
+      margin-bottom: 3px;
+    }
+
+    /* ===== SIDEBAR LISTS ===== */
+    .sidebar-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar-list li {
+      font-size: 13px;
+      color: #222;
+      padding: 5px 0;
+      border-bottom: 1px dashed #bbb;
+    }
+
+    .sidebar-list li:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-list li::before {
+      content: "◆ ";
+      font-size: 10px;
+    }
+
+    /* ===== EDUCATION BOX ===== */
+    .edu-box {
+      background: #fff;
+      border: 1px solid #bbb;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+    }
+
+    .edu-box .degree {
+      font-size: 13px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .edu-box .major {
+      font-size: 12px;
+      color: #333;
+    }
+
+    .edu-box .uni {
+      font-size: 12px;
+      color: #555;
+    }
+
+    /* ===== COURSE TAG ===== */
+    .tag {
+      display: inline-block;
+      background: #fff;
+      color: #111;
+      border: 1px solid #555;
+      padding: 3px 12px;
+      font-size: 12px;
+      margin: 4px 4px 4px 0;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: #fff;
+      color: #555;
+      text-align: center;
+      font-size: 11px;
+      padding: 10px;
+      border-top: 1px solid #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ===== HEADER ===== -->
+    <div class="header">
+      <h1>نسيبة يوسف فرح جبريل</h1>
+      <div class="title-label">معلمة</div>
+      <div class="contact-line">
+        <span>📞 0116985815</span>
+        <span>📍 دنقلا</span>
+      </div>
+    </div>
+
+    <!-- ===== BODY ===== -->
+    <div class="body-wrapper">
+
+      <!-- ===== SIDEBAR ===== -->
+      <div class="sidebar">
+
+        <!-- المؤهل التعليمي -->
+        <div class="section-title">المؤهل التعليمي</div>
+        <div class="edu-box">
+          <div class="degree">بكالوريوس تربية</div>
+          <div class="major">تخصص: جغرافيا وتاريخ</div>
+          <div class="uni">جامعة السلام – 2021</div>
+        </div>
+
+        <!-- المهارات -->
+        <div class="section-title">المهارات</div>
+        <ul class="sidebar-list">
+          <li>إجادة استخدام الحاسب الآلي</li>
+          <li>إعداد الخطط الدراسية</li>
+          <li>العمل الميداني</li>
+          <li>إدارة الصف والانضباط المدرسي</li>
+          <li>التواصل الفعّال مع أولياء الأمور</li>
+          <li>التعليم التفاعلي والأنشطة الإبداعية</li>
+        </ul>
+
+        <!-- الكورسات والتدريب -->
+        <div class="section-title">الكورسات والتدريب</div>
+        <div>
+          <span class="tag">تنمية اجتماعية</span>
+          <span class="tag">الحاسب الآلي</span>
+        </div>
+
+      </div>
+
+      <!-- ===== MAIN CONTENT ===== -->
+      <div class="main">
+
+        <!-- الهدف الوظيفي -->
+        <div class="section-title">الهدف الوظيفي</div>
+        <p class="objective-text">
+          معلمة متخصصة في الجغرافيا والتاريخ واللغة العربية، تمتلك خبرة تدريسية وإشرافية تمتد لأكثر من أربع سنوات في مراحل دراسية متعددة. أسعى إلى تطوير العملية التعليمية وتقديم بيئة تعلّم محفّزة تنمّي قدرات الطلاب وتبني شخصياتهم بشكل متكامل.
+        </p>
+
+        <!-- الخبرات التعليمية -->
+        <div class="section-title">الخبرات التعليمية</div>
+
+        <!-- Experience 1 -->
+        <div class="exp-item">
+          <div class="job-title">معلمة</div>
+          <div class="school-name">مدرسة الإسلام الخاصة</div>
+          <div class="date-range">2019 – 2023</div>
+          <ul>
+            <li>مشرفة على الصف الثالث الابتدائي</li>
+            <li>معلمة في الصف الثامن</li>
+            <li>تدريس: لغة عربية، جغرافيا، تاريخ، علوم، دراسات إسلامية</li>
+            <li>المشاركة في اجتماعات أولياء الأمور وتقارير الطلاب</li>
+          </ul>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="exp-item">
+          <div class="job-title">معلمة</div>
+          <div class="school-name">مدرسة خولة</div>
+          <div class="date-range">ديسمبر 2020 – مارس 2021</div>
+          <ul>
+            <li>مشرفة على الصف الثالث الابتدائي</li>
+            <li>تدريس جغرافيا للصف السادس</li>
+            <li>تدريس تاريخ للصف الخامس</li>
+            <li>تدريس لغة عربية للصف الثالث</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer">السيرة الذاتية – نسيبة يوسف فرح جبريل &nbsp;|&nbsp; جميع المعلومات صحيحة ودقيقة</div>
+
+  </div>
+</body>
+</html>
