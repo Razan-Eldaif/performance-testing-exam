@@ -16,44 +16,56 @@
     body {
       font-family: 'Tajawal', 'Arial', sans-serif;
       direction: rtl;
-      background: #f4f6f9;
-      color: #222;
+      background: #fff;
+      color: #111;
       font-size: 14px;
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
     .page {
       max-width: 850px;
       margin: 30px auto;
       background: #fff;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-      border-radius: 8px;
+      border: 1px solid #aaa;
       overflow: hidden;
     }
 
     /* ===== HEADER ===== */
     .header {
-      background: linear-gradient(135deg, #1a5276 0%, #2e86c1 100%);
-      color: #fff;
-      padding: 36px 40px 28px;
+      background: #fff;
+      color: #111;
+      padding: 32px 40px 22px;
       text-align: center;
+      border-bottom: 3px double #111;
     }
 
     .header h1 {
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 800;
       letter-spacing: 1px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+    }
+
+    .header .title-label {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
     }
 
     .header .contact-line {
-      font-size: 14px;
-      opacity: 0.9;
+      font-size: 13px;
       margin-top: 6px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
     }
 
     .header .contact-line span {
-      margin: 0 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
 
     /* ===== BODY LAYOUT ===== */
@@ -64,71 +76,68 @@
 
     /* ===== SIDEBAR ===== */
     .sidebar {
-      width: 280px;
-      min-width: 280px;
-      background: #eaf2fb;
-      padding: 30px 20px;
-      border-left: 4px solid #2e86c1;
+      width: 270px;
+      min-width: 270px;
+      background: #f7f7f7;
+      padding: 26px 18px;
+      border-left: 1px solid #ccc;
     }
 
     /* ===== MAIN CONTENT ===== */
     .main {
       flex: 1;
-      padding: 30px 32px;
+      padding: 26px 30px;
     }
 
     /* ===== SECTION TITLES ===== */
     .section-title {
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 700;
-      color: #1a5276;
-      border-bottom: 2px solid #2e86c1;
-      padding-bottom: 5px;
-      margin-bottom: 14px;
-      margin-top: 26px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      color: #111;
+      border-bottom: 2px solid #111;
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+      margin-top: 22px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     .section-title:first-of-type {
       margin-top: 0;
     }
 
-    .section-title .icon {
-      font-size: 18px;
-    }
-
-    .sidebar .section-title {
-      font-size: 15px;
+    /* ===== OBJECTIVE ===== */
+    .objective-text {
+      font-size: 13px;
+      color: #222;
+      line-height: 1.8;
+      text-align: justify;
     }
 
     /* ===== EXPERIENCE ITEM ===== */
     .exp-item {
-      margin-bottom: 20px;
-      padding-right: 14px;
-      border-right: 3px solid #2e86c1;
+      margin-bottom: 18px;
+      padding-right: 12px;
+      border-right: 3px solid #555;
     }
 
     .exp-item .job-title {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
-      color: #1a5276;
+      color: #111;
     }
 
     .exp-item .school-name {
       font-size: 13px;
-      color: #555;
-      margin-bottom: 4px;
+      color: #333;
+      font-weight: 500;
+      margin-bottom: 2px;
     }
 
     .exp-item .date-range {
       font-size: 12px;
-      color: #888;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 4px;
+      color: #555;
+      margin-bottom: 5px;
     }
 
     .exp-item ul {
@@ -137,14 +146,13 @@
     }
 
     .exp-item ul li::before {
-      content: "▪ ";
-      color: #2e86c1;
+      content: "– ";
       font-weight: bold;
     }
 
     .exp-item ul li {
       font-size: 13px;
-      color: #333;
+      color: #222;
       margin-bottom: 3px;
     }
 
@@ -157,12 +165,9 @@
 
     .sidebar-list li {
       font-size: 13px;
-      color: #333;
+      color: #222;
       padding: 5px 0;
-      border-bottom: 1px dashed #c5d9ec;
-      display: flex;
-      align-items: center;
-      gap: 7px;
+      border-bottom: 1px dashed #bbb;
     }
 
     .sidebar-list li:last-child {
@@ -170,55 +175,73 @@
     }
 
     .sidebar-list li::before {
-      content: "✔";
-      color: #2e86c1;
-      font-size: 12px;
+      content: "◆ ";
+      font-size: 10px;
     }
 
     /* ===== EDUCATION BOX ===== */
     .edu-box {
       background: #fff;
-      border: 1px solid #c5d9ec;
-      border-radius: 6px;
-      padding: 12px 14px;
+      border: 1px solid #bbb;
+      padding: 10px 12px;
       margin-bottom: 10px;
     }
 
     .edu-box .degree {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
-      color: #1a5276;
+      color: #111;
     }
 
     .edu-box .major {
-      font-size: 13px;
-      color: #444;
+      font-size: 12px;
+      color: #333;
     }
 
     .edu-box .uni {
       font-size: 12px;
-      color: #888;
+      color: #555;
     }
 
     /* ===== COURSE TAG ===== */
     .tag {
       display: inline-block;
-      background: #2e86c1;
-      color: #fff;
-      border-radius: 20px;
-      padding: 4px 14px;
+      background: #fff;
+      color: #111;
+      border: 1px solid #555;
+      padding: 3px 12px;
       font-size: 12px;
       margin: 4px 4px 4px 0;
     }
 
+    /* ===== LANGUAGES TABLE ===== */
+    .lang-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .lang-table th,
+    .lang-table td {
+      border: 1px solid #bbb;
+      padding: 4px 8px;
+      text-align: center;
+    }
+
+    .lang-table th {
+      background: #eee;
+      font-weight: 700;
+    }
+
     /* ===== FOOTER ===== */
     .footer {
-      background: #1a5276;
-      color: #fff;
+      background: #fff;
+      color: #555;
       text-align: center;
-      font-size: 12px;
-      padding: 12px;
-      letter-spacing: 0.5px;
+      font-size: 11px;
+      padding: 10px;
+      border-top: 1px solid #bbb;
     }
   </style>
 </head>
@@ -228,9 +251,11 @@
     <!-- ===== HEADER ===== -->
     <div class="header">
       <h1>نسيبة يوسف فرح جبريل</h1>
-      <p class="contact-line">
+      <div class="title-label">معلمة ومشرفة تربوية</div>
+      <div class="contact-line">
         <span>📞 0116985815</span>
-      </p>
+        <span>📍 السودان</span>
+      </div>
     </div>
 
     <!-- ===== BODY ===== -->
@@ -240,7 +265,7 @@
       <div class="sidebar">
 
         <!-- المؤهل التعليمي -->
-        <div class="section-title"><span class="icon">🎓</span> المؤهل التعليمي</div>
+        <div class="section-title">المؤهل التعليمي</div>
         <div class="edu-box">
           <div class="degree">بكالوريوس تربية</div>
           <div class="major">تخصص: جغرافيا وتاريخ</div>
@@ -248,17 +273,38 @@
         </div>
 
         <!-- المهارات -->
-        <div class="section-title"><span class="icon">⚡</span> المهارات</div>
+        <div class="section-title">المهارات</div>
         <ul class="sidebar-list">
           <li>إجادة استخدام الحاسب الآلي</li>
           <li>إعداد الخطط الدراسية</li>
           <li>العمل الميداني</li>
+          <li>إدارة الصف والانضباط المدرسي</li>
+          <li>التواصل الفعّال مع أولياء الأمور</li>
+          <li>التعليم التفاعلي والأنشطة الإبداعية</li>
         </ul>
 
+        <!-- اللغات -->
+        <div class="section-title">اللغات</div>
+        <table class="lang-table">
+          <tr>
+            <th>اللغة</th>
+            <th>المستوى</th>
+          </tr>
+          <tr>
+            <td>العربية</td>
+            <td>ممتاز</td>
+          </tr>
+          <tr>
+            <td>الإنجليزية</td>
+            <td>أساسي</td>
+          </tr>
+        </table>
+
         <!-- الكورسات والتدريب -->
-        <div class="section-title"><span class="icon">📚</span> الكورسات والتدريب</div>
+        <div class="section-title">الكورسات والتدريب</div>
         <div>
           <span class="tag">تنمية اجتماعية</span>
+          <span class="tag">الحاسب الآلي</span>
         </div>
 
       </div>
@@ -266,30 +312,38 @@
       <!-- ===== MAIN CONTENT ===== -->
       <div class="main">
 
-        <div class="section-title"><span class="icon">💼</span> الخبرات التعليمية</div>
+        <!-- الهدف الوظيفي -->
+        <div class="section-title">الهدف الوظيفي</div>
+        <p class="objective-text">
+          معلمة متخصصة في الجغرافيا والتاريخ واللغة العربية، تمتلك خبرة تدريسية وإشرافية تمتد لأكثر من أربع سنوات في مراحل دراسية متعددة. أسعى إلى تطوير العملية التعليمية وتقديم بيئة تعلّم محفّزة تنمّي قدرات الطلاب وتبني شخصياتهم بشكل متكامل.
+        </p>
+
+        <!-- الخبرات التعليمية -->
+        <div class="section-title">الخبرات التعليمية</div>
 
         <!-- Experience 1 -->
         <div class="exp-item">
-          <div class="job-title">معلمة ومشرفة</div>
+          <div class="job-title">معلمة ومشرفة صفية</div>
           <div class="school-name">مدرسة الإسلام الخاصة</div>
-          <div class="date-range">📅 2019 – 2023</div>
+          <div class="date-range">2019 – 2023</div>
           <ul>
-            <li>مشرفة على الصف الثالث</li>
+            <li>مشرفة على الصف الثالث الابتدائي</li>
             <li>معلمة في الصف الثامن</li>
-            <li>المواد: لغة عربية، جغرافيا، تاريخ، علوم، دراسات إسلامية</li>
+            <li>تدريس: لغة عربية، جغرافيا، تاريخ، علوم، دراسات إسلامية</li>
+            <li>المشاركة في اجتماعات أولياء الأمور وتقارير الطلاب</li>
           </ul>
         </div>
 
         <!-- Experience 2 -->
         <div class="exp-item">
-          <div class="job-title">معلمة ومشرفة</div>
+          <div class="job-title">معلمة ومشرفة صفية</div>
           <div class="school-name">مدرسة خولة</div>
-          <div class="date-range">📅 ديسمبر 2020 – مارس 2021</div>
+          <div class="date-range">ديسمبر 2020 – مارس 2021</div>
           <ul>
-            <li>مشرفة على الصف الثالث</li>
-            <li>معلمة جغرافيا للصف السادس</li>
-            <li>معلمة تاريخ للصف الخامس</li>
-            <li>معلمة لغة عربية للصف الثالث</li>
+            <li>مشرفة على الصف الثالث الابتدائي</li>
+            <li>تدريس جغرافيا للصف السادس</li>
+            <li>تدريس تاريخ للصف الخامس</li>
+            <li>تدريس لغة عربية للصف الثالث</li>
           </ul>
         </div>
 
@@ -297,7 +351,7 @@
     </div>
 
     <!-- ===== FOOTER ===== -->
-    <div class="footer">السيرة الذاتية – نسيبة يوسف فرح جبريل</div>
+    <div class="footer">السيرة الذاتية – نسيبة يوسف فرح جبريل &nbsp;|&nbsp; جميع المعلومات صحيحة ودقيقة</div>
 
   </div>
 </body>
